@@ -6,15 +6,15 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///project.db"
 db = SQLAlchemy(app)
 
-class User(db):
+class User(db.Model):
     sno = db.Column(db.Integer)
     name = db.Column(db.String(128),nullable = False)
-    phone_no = db.Column(db.Integer(10),nullable = False, unique= True, primary_key = True)
+    phone_no = db.Column(db.Integer(),nullable = False, unique= True, primary_key = True)
     email = db.Column(db.String(256), nullable = False, unique= True)
     password = db.Column(db.VARBINARY, nullable = False)
     role = db.Column(db.String(128),nullable= False)
     
-class Student(db):
+class Student(db.Model):
     roll_no:int = db.Column(db.Integer, primary_key = True)
     name:str = db.Column(db.String(256), nullable = False)
     age:int = db.Column(db.Integer, nullable = False)
