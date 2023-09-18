@@ -1,0 +1,33 @@
+
+/* Circular box for the profile dropdown with a black background */
+.profile-dropdown {
+    border-radius: 30%;
+    background-color: white;
+    padding: 8px 8px; /* Adjust padding as needed */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Square box for the menu dropdown with a black background */
+.menu-dropdown {
+    background-color: white;
+    padding: 8px 8px; /* Adjust padding as needed */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the search button */
+.form-control {
+    background-color: white;
+    border: none;
+}
+
+/* Adjust the size of the home icon to match the menu dropdown */
+#home .material-icons {
+    font-size: 24px; /* Adjust the size as needed to match the menu dropdown */
+    color: white;
+    
+}
